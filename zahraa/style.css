@@ -1,0 +1,324 @@
+/* =========================
+   المتغيرات الأساسية
+========================= */
+
+:root {
+    --bg: #0b1120;
+    --card: #111b2e;
+    --blue: #38bdf8;
+    --text: #f1f5f9;
+    --muted: #a3b3c9;
+  }
+  
+  /* =========================
+     الإعدادات العامة
+  ========================= */
+  
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.8;
+  }
+  
+  body.english {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* =========================
+     شريط التنقل Navbar
+  ========================= */
+  
+  .navbar {
+    background: #0b1120;
+    border-bottom: 1px solid #263249;
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+  }
+  
+  .navbar-brand span,
+  .highlight {
+    color: var(--blue);
+  }
+  
+  .nav-link {
+    color: var(--muted);
+  }
+  
+  .nav-link:hover {
+    color: var(--blue);
+  }
+  
+  /* =========================
+     الأقسام العامة
+  ========================= */
+  
+  section {
+    padding: 85px 0;
+    scroll-margin-top: 65px;
+  }
+  
+  /* =========================
+     القسم الرئيسي Home
+  ========================= */
+  
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(
+      circle at 15% 20%,
+      #123047,
+      transparent 40%
+    );
+  }
+  
+  h1 {
+    font-size: clamp(40px, 6vw, 70px);
+    font-weight: 800;
+  }
+  
+  h2 {
+    font-weight: 700;
+  }
+  
+  .hero h2 {
+    color: var(--muted);
+    margin: 15px 0;
+  }
+  
+  p {
+    color: var(--muted);
+  }
+  
+  /* أيقونة البرمجة */
+  
+  .hero-icon {
+    width: 220px;
+    height: 220px;
+    margin: 30px auto;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 45px #38bdf822;
+  }
+  
+  .hero-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .hero-icon i {
+    font-size: 90px;
+    color: var(--blue);
+  }
+  
+  /* =========================
+     الأزرار
+  ========================= */
+  
+  .btn-main {
+    display: inline-block;
+    background: var(--blue);
+    color: #07111e;
+    padding: 10px 23px;
+    border-radius: 9px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition: .3s;
+  }
+  
+  .btn-main:hover {
+    background: transparent;
+    color: var(--blue);
+  }
+  
+  .btn-outline-custom {
+    display: inline-block;
+    color: white;
+    border: 1px solid #34445c;
+    padding: 10px 23px;
+    border-radius: 9px;
+    text-decoration: none;
+  }
+  
+  .btn-outline-custom:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+  }
+  
+  /* =========================
+     عناوين الأقسام
+  ========================= */
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  .section-line {
+    width: 60px;
+    height: 4px;
+    background: var(--blue);
+    margin: 0 auto 25px;
+    border-radius: 5px;
+  }
+  
+  /* =========================
+     الكروت
+  ========================= */
+  
+  .custom-card {
+    height: 100%;
+    background: var(--card);
+    border: 1px solid #263249;
+    padding: 25px;
+    border-radius: 15px;
+    transition: .3s;
+  }
+  
+  .custom-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--blue);
+  }
+  
+  .card-icon {
+    font-size: 38px;
+    color: var(--blue);
+    margin-bottom: 12px;
+  }
+  
+  .custom-card h3 {
+    font-size: 21px;
+    font-weight: 700;
+  }
+  
+  /* =========================
+     المهارات Skills
+  ========================= */
+  
+  .skill-item {
+    margin-bottom: 22px;
+  }
+  
+  .skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+  }
+  
+  .progress {
+    height: 9px;
+    background: #263249;
+  }
+  
+  .progress-bar {
+    background: var(--blue);
+  }
+  
+  /* =========================
+     علامات المشاريع
+  ========================= */
+  
+  .project-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #153047;
+    color: var(--blue);
+    border-radius: 6px;
+    margin: 12px 4px 0 0;
+    font-size: 13px;
+  }
+  
+  /* =========================
+     قسم التواصل Contact
+  ========================= */
+  
+  .contact-card {
+    background: var(--card);
+    border: 1px solid #263249;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow-wrap: anywhere;
+  }
+  
+  .contact-card i {
+    color: var(--blue);
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  
+  .contact-card a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contact-card a:hover {
+    color: var(--blue);
+  }
+  
+  /* =========================
+     زر تغيير اللغة
+  ========================= */
+  
+  .language-btn {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    background: transparent;
+    border-radius: 7px;
+    padding: 5px 12px;
+  }
+  
+  .language-btn:hover {
+    background: var(--blue);
+    color: var(--bg);
+  }
+  
+  /* =========================
+     Footer
+  ========================= */
+  
+  footer {
+    background: #080d18;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid #263249;
+  }
+  
+  /* =========================
+     الشاشات الصغيرة والموبايل
+  ========================= */
+  
+  @media (max-width: 768px) {
+    .hero {
+      text-align: center;
+      padding-top: 120px;
+    }
+  
+    section {
+      padding: 65px 0;
+    }
+  
+    .hero-icon {
+      width: 170px;
+      height: 170px;
+    }
+  
+    .hero-icon i {
+      font-size: 70px;
+    }
+  }

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>زهراء | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ملف CSS الخارجي -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Zahraa<span>.</span></a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-label="فتح القائمة">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-ar="عني" data-en="About">عني</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" data-ar="مهاراتي" data-en="Skills">مهاراتي</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" data-ar="مشاريعي" data-en="Projects">مشاريعي</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-ar="تواصل معي" data-en="Contact">تواصل معي</a>
+          </li>
+        </ul>
+
+        <button class="language-btn" id="languageToggle">English</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-7">
+          <p class="highlight fw-bold"
+             data-ar="أهلاً بيكم في موقعي الشخصي"
+             data-en="WELCOME TO MY PORTFOLIO">
+            أهلاً بيكم في موقعي الشخصي
+          </p>
+
+          <h1>
+            <span data-ar="أنا" data-en="I'm">أنا</span>
+            <span class="highlight">زهراء</span>
+          </h1>
+
+          <h2 data-ar="طالبة نظم ومعلومات"
+              data-en="Information Systems Student">
+            طالبة نظم ومعلومات
+          </h2>
+
+          <p
+            data-ar="مهتمة بتصميم وتطوير مواقع الويب، وبحب أتعلم تقنيات جديدة وأطور مهاراتي في البرمجة والتصميم."
+            data-en="I'm interested in web design and development. I enjoy learning new technologies and improving my programming and design skills.">
+            مهتمة بتصميم وتطوير مواقع الويب، وبحب أتعلم تقنيات جديدة وأطور مهاراتي في البرمجة والتصميم.
+          </p>
+
+          <div class="mt-4 d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+            <a href="#projects" class="btn-main"
+               data-ar="شوفي مشاريعي" data-en="View Projects">
+              شوفي مشاريعي
+            </a>
+
+            <a href="#contact" class="btn-outline-custom"
+               data-ar="تواصلي معايا" data-en="Contact Me">
+              تواصلي معايا
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center">
+          <div class="hero-icon">
+            <img src="WhatsApp Image 2026-10-15 at 5.49.33 PM.jpeg" alt="Zahraa">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title" data-ar="نبذة عني" data-en="About Me">نبذة عني</h2>
+      <div class="section-line"></div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="custom-card">
+            <i class="bi bi-person-workspace card-icon"></i>
+            <h3 data-ar="مين أنا؟" data-en="Who Am I?">مين أنا؟</h3>
+
+            <p
+              data-ar="أنا زهراء، طالبة نظم ومعلومات، مهتمة بالتكنولوجيا وتصميم المواقع، وبسعى أطور نفسي من خلال التعلم والتطبيق العملي."
+              data-en="I'm Zahraa, an Information Systems student interested in technology and web design. I aim to improve through learning and practical experience.">
+              أنا زهراء، طالبة نظم ومعلومات، مهتمة بالتكنولوجيا وتصميم المواقع، وبسعى أطور نفسي من خلال التعلم والتطبيق العملي.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="custom-card">
+            <i class="bi bi-bullseye card-icon"></i>
+            <h3 data-ar="هدفي" data-en="My Goal">هدفي</h3>
+
+            <p
+              data-ar="هدفي أطور مهاراتي في البرمجة وتطوير الويب، وأعمل مشاريع مميزة تساعدني أبني مستقبل مهني ناجح."
+              data-en="My goal is to improve my programming and web development skills and build useful projects for my future career.">
+              هدفي أطور مهاراتي في البرمجة وتطوير الويب، وأعمل مشاريع مميزة تساعدني أبني مستقبل مهني ناجح.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title" data-ar="مهاراتي" data-en="My Skills">مهاراتي</h2>
+      <div class="section-line"></div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="custom-card">
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>HTML</span><span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width:85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>CSS</span><span>75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width:75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item mb-0">
+              <div class="skill-label">
+                <span>Bootstrap</span><span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width:70%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="custom-card">
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>JavaScript</span><span>50%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width:50%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Problem Solving</span><span>60%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width:60%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item mb-0">
+              <div class="skill-label">
+                <span data-ar="التعلم المستمر" data-en="Continuous Learning">التعلم المستمر</span>
+                <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width:90%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center mt-3 small"
+         data-ar="عدّلي نسب المهارات حسب مستواك الحقيقي."
+         data-en="Adjust the percentages to reflect your actual skill levels.">
+        عدّلي نسب المهارات حسب مستواك الحقيقي.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title" data-ar="مشاريعي" data-en="My Projects">مشاريعي</h2>
+      <div class="section-line"></div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="custom-card">
+            <i class="bi bi-window-stack card-icon"></i>
+            <h3 data-ar="موقع شخصي" data-en="Personal Website">موقع شخصي</h3>
+
+            <p
+              data-ar="موقع للتعريف بالنفس وعرض المهارات وبيانات التواصل."
+              data-en="A personal website to introduce yourself and display skills and contact details.">
+              موقع للتعريف بالنفس وعرض المهارات وبيانات التواصل.
+            </p>
+
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="custom-card">
+            <i class="bi bi-check2-square card-icon"></i>
+            <h3 data-ar="قائمة مهام" data-en="To-Do List">قائمة مهام</h3>
+
+            <p
+              data-ar="تطبيق لتنظيم المهام اليومية وإضافة المهام المكتملة."
+              data-en="An app for organizing daily tasks and tracking completed tasks.">
+              تطبيق لتنظيم المهام اليومية وإضافة المهام المكتملة.
+            </p>
+
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="custom-card">
+            <i class="bi bi-shop card-icon"></i>
+            <h3 data-ar="واجهة متجر" data-en="Online Store">واجهة متجر</h3>
+
+            <p
+              data-ar="تصميم واجهة متجر إلكتروني لعرض المنتجات بشكل منظم."
+              data-en="An online store interface for displaying products in an organized layout.">
+              تصميم واجهة متجر إلكتروني لعرض المنتجات بشكل منظم.
+            </p>
+
+            <span class="project-tag">Bootstrap</span>
+            <span class="project-tag">CSS</span>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-center mt-4"
+         data-ar="المشاريع دي أمثلة، استبدليها بمشاريعك الفعلية عند توفرها."
+         data-en="These are examples. Replace them with your actual projects when available.">
+        المشاريع دي أمثلة، استبدليها بمشاريعك الفعلية عند توفرها.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</h2>
+      <div class="section-line"></div>
+
+      <p class="text-center mb-4"
+         data-ar="يسعدني التواصل معاكم."
+         data-en="I'd be happy to hear from you.">
+        يسعدني التواصل معاكم.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+
+          <div class="contact-card">
+            <i class="bi bi-person-fill"></i>
+            <strong data-ar="الاسم:" data-en="Name:">الاسم:</strong>
+            <span>زهراء</span>
+          </div>
+
+          <div class="contact-card">
+            <i class="bi bi-mortarboard-fill"></i>
+            <strong data-ar="الدراسة:" data-en="Education:">الدراسة:</strong>
+            <span data-ar="طالبة نظم ومعلومات"
+                  data-en="Information Systems Student">
+              طالبة نظم ومعلومات
+            </span>
+          </div>
+
+          <div class="contact-card">
+            <i class="bi bi-telephone-fill"></i>
+            <strong data-ar="رقم الموبايل:" data-en="Phone:">رقم الموبايل:</strong>
+            <a href="tel:01012828324" dir="ltr">01012828324</a>
+          </div>
+
+          <div class="contact-card">
+            <i class="bi bi-envelope-fill"></i>
+            <strong data-ar="البريد الإلكتروني:" data-en="Email:">البريد الإلكتروني:</strong>
+            <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>
+          </div>
+
+          <div class="text-center mt-4">
+            <a href="tel:01012828324" class="btn-main">
+              <i class="bi bi-telephone"></i>
+              <span data-ar="اتصلي بيا" data-en="Call Me">اتصلي بيا</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-1">
+        © <span id="year"></span> Zahraa.
+        <span data-ar="جميع الحقوق محفوظة."
+              data-en="All rights reserved.">
+          جميع الحقوق محفوظة.
+        </span>
+      </p>
+
+      <small
+        data-ar="تم التصميم باستخدام HTML وCSS وBootstrap"
+        data-en="Built with HTML, CSS and Bootstrap">
+        تم التصميم باستخدام HTML وCSS وBootstrap
+      </small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript الخاص بالموقع -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
